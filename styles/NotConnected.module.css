@@ -1,0 +1,29 @@
+.wrapper {
+  /* background-color: #242833; */
+  background-color: #a2b9bc;
+  /* min-height: 200px; */
+  height: 500px;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 2rem;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: #fff;
+  text-align: center;
+  margin: auto;
+}
+
+.textAccent {
+  color: #ffef96;
+  font-size: 1rem;
+}
