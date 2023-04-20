@@ -1,7 +1,5 @@
 import { useAppContext } from '../context/context'
 import style from '../styles/Header.module.css'
-import UserCard from './UserCard'
-import WalletConnectBtn from './WalletConnectBtn'
 import { ConnectButton } from '@web3uikit/web3'
 import { useMoralis } from "react-moralis"
 const Header = () => {

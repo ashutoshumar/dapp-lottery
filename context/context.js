@@ -6,7 +6,7 @@ import { useMoralis } from "react-moralis"
 import {useNotification } from "@web3uikit/core"
 export const AppProvider = ({ children }) => {
   const dispatch = useNotification();
-  const { isWeb3Enabled } = useMoralis()
+  const { isWeb3Enabled, isAuthenticated,account} = useMoralis()
   const [web3, setWeb3] = useState()
   const [address, setAddress] = useState('')
   const [lotteryContract, setLotteryContract] = useState()
@@ -38,13 +38,13 @@ const handleFailNotification = () => {
       icon:"",
   })
 }
-console.log(isWeb3Enabled)
+
   useEffect(() => {
-    if (isWeb3Enabled ) {
-      console.log(isWeb3Enabled)
+    if (account ) {
+      
         connectWallet()
     }
-}, [isWeb3Enabled])
+}, [account])
   
   useEffect(() => {
     updateLottery()
