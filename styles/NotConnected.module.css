@@ -1,6 +1,6 @@
 .wrapper {
   /* background-color: #242833; */
-  background-color: #a2b9bc;
+  background-color: black;
   /* min-height: 200px; */
   height: 500px;
   width: 50%;
@@ -13,6 +13,10 @@
   padding: 20px;
   flex-direction: column;
   margin-top: 40px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .title {
